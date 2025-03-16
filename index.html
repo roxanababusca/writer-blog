@@ -1,0 +1,97 @@
+---
+layout: default
+title: Homepage
+seo:
+  title: 
+  description:
+  social_image:
+  twitter_card:
+  keywords:
+  hide-from-google: false
+---
+
+    <section class="grid grid_sm-center">
+        <div class="tall-120 bg-featured">
+            <div class="col-11-top_sm-12 editable padded ">
+                <h1 class="margin-t-2 bottom-border padded-b">Hi there! I’m Roxana, a web developer and content creator. This blog is about learning, life, and inspiring you to take one step forward towards choices that make sense to you.</h1>
+            </div>
+        </div>
+        <div class="bg-light tall-80 sm-tall-50"></div> 
+        <div class="grid-center absolute padded" id="div1">
+            {% include post-cta.html %}
+            
+            {% for post in site.posts limit:3 %}
+                {% include post-loop-item-square.html %}
+            {% endfor %}
+        
+        </div>
+        <div class="grid-center absolute padded" id="div2">
+            {% include post-cta.html %}
+
+            {% for post in site.posts limit:2 %}
+
+                {% include post-loop-item-square.html %}
+
+            {% endfor %}
+
+        </div>
+        <div class="grid-center absolute padded" id="div3">
+            {% include post-cta.html %}
+
+            {% for post in site.posts limit:1 %}
+                {% include post-loop-item-square.html %}
+            {% endfor %}
+
+        </div>
+    </section>
+
+    <section class="grid tall-80">
+        <div class="col-12 grid-center bg-image fixed parallax">
+         <div class="col-6-middle_sm-10 center bg-accent rounded editable padded">
+                <h2> &#8220;The ability to look deeply is the root of creativity. To see past the ordinary and the mundane and get to what might otherwise be invisible.&#8221;</h2>
+                <p class="margin-t-2"> Rick Rubin </p>
+            </div>
+        </div>
+    </section>
+    <section class="grid-center padded-xl sm-padded-t-10 bg-light">
+        <h2 class="margin-b col-12 center"> Shop my freelancer writer resources </h2>
+        {% include shopify.html %}
+    </section>
+    
+    <section class="grid tall-80">
+        <div class="col-12 grid-center bg-image bg-banner fixed parallax">
+            <div class="col-6-middle_sm-10 center bg-accent rounded editable padded">
+                <h2> &#8220;Being an artist means to be continually asking, 'How can it be better?' whatever it is. It may be your art, and it may be your life.&#8221;</h2>
+                <p class="margin-t-2"> Rick Rubin </p>
+            </div>
+        </div>
+    </section>
+    <section class="grid bg-light padded-xl sm-padded-2 sm-padded-t-10">
+        <h2 class="margin-b-2 col-12 center"> About me </h2>
+        <div class="col-4_md-11 bg-image bg-about capped-width tall-50 margin-b">
+        </div>
+        <div class="col-7_md-12-middle padded text-left sm-padded-t-10">
+            <p>Being a freelance remote developer offers the freedom to choose projects that align with my interests and skills. The flexibility of working from anywhere allows me to create a comfortable environment that enhances my productivity. </p>
+            <p> In addition to coding, I enjoy writing content that demystifies complex technical concepts. Sharing my knowledge not only helps others but also solidifies my understanding, making me a better developer in the long run.</p>
+        </div>
+        <div class="col-4_md-12-top center padded-15">
+            <p> <i class="las la-pen"></i> </p>
+            <h3 class="icon-heading"> Imagine </h3>
+            <p class="text-left"> Creativity is a vital quality that sets a writer apart. With an imaginative mind, writers can craft unique and captivating stories that transport readers to new worlds. </p>
+        </div>
+        <div class="col-4_md-12 center padded-15">
+            <p> <i class="las la-book"></i> </p>
+            <h3 class="icon-heading"> Connect </h3>
+            <p class="text-left"> Writers with empathy understand the human experience and can put themselves in the shoes of their characters, capturing their emotions, struggles, and triumphs with authenticity. </p>
+        </div>
+        <div class="col-4-bottom_md-12-bottom center padded-15">
+            <p> <i class="las la-cloud"></i> </p>
+            <h3 class="icon-heading"> Persist </h3>
+            <p class="text-left"> Perseverance is a defining quality that distinguishes successful writers. Writing is a journey filled with challenges, rejections, and setbacks. By persevering one overcomes these obstacles.</p>
+        </div>
+    </section>
+
+
+
+
+

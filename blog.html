@@ -1,0 +1,83 @@
+---
+layout: default
+title: Blog Page 
+seo:
+  title:
+  description:
+  social_image:
+  twitter_card:
+  keywords:
+  hide-from-google: false
+---
+
+<!------------------------ Image Banner  ------------------------>
+<section class="bg-image bg-blog-cover padded grid bg-overlay bg-overlay-gradient tall-90">
+
+    <div class="col-12-middle center text-light">
+        <h1> Welcome to my blog </h1>
+    </div>
+
+</section>
+
+<!------------------------ Split blog loop (part 1) ------------------------>
+<section class="padded bg-light">
+
+    <div class="capped-width grid-center">
+
+    <div class="col-9_sm-12 padded-05 center margin-b-1 padded-2">
+        <h2> Explore my latest articles </h2>
+        <p class="margin-t-2"> Get inspired my coffee infused mussings on life, meaningul work, and creativity! </p>
+    </div>
+
+        {% for post in site.posts limit:3 %}
+
+            {% include post-loop-item-square.html %}
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+
+<!------------------------ CTA Banner  ------------------------>
+<section class="bg-light"> 
+
+    <div class="bg-featured padded capped-width rounded padded center padded-t-lg padded-b-lg"> 
+        <div class="capped-width-narrow">
+            <h3> Did you enjoy these articles? </h3>
+            <p> Contact me for collaboration proposals and creative projects! </p>
+            <a href="/#contact" class="button margin-t-2"> Let's connect </a>
+        </div>
+    </div>
+
+</section> 
+
+
+<!------------------------ Split blog loop (part 2) ------------------------>
+<section class="padded bg-light">
+
+    <div class="capped-width grid-center">
+
+        {% for post in site.posts limit:12 offset:3 %}
+
+                {% include post-loop-item-square.html %}
+
+        {% endfor %}
+
+    </div>
+
+
+    <!-- This checks if there are more than 15 blog posts, and if there are shows a link to the full blog archive -->
+
+    {% assign post_count = site.posts | size %}
+    
+    {% if post_count > 15 %}
+        <div class="center padded">
+            <a class="button" href="/blog-archive"> Read more articles </a>
+        </div>
+       
+    {% endif %}
+
+</section>
+

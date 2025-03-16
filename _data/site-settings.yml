@@ -1,0 +1,23 @@
+seo: 
+  site_name: Roxana's Blog
+  title:  A writer's blog showcasing selected pieces of content
+  description: 
+  keywords: 
+  author: Roxana
+  favicon_image: /icons/favicon.ico
+social: 
+  instagram_username: 
+  facebook_url: 
+design: 
+  dark-text_color: '#14170f'
+  medium-text_color: 'rgb(90,90,95)'
+  light-text_color: '#ffffff'
+  light-grey-text_color: '#e3e7db'
+  featured-text_color: '#6d6875'
+  dark_color: '#14170f'
+  orange_color: '#ffebb6'
+  light_color: '#FAFAFA'
+  v-light_color: '#f9f9f9'
+  featured_color: '#A39EA8'
+  card_color: '#abc284'
+  accent_color: '#e3e7db'

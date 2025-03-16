@@ -1,0 +1,19 @@
+
+<div class="col-4_md-6_sm-9_xs-12 post-item padded-1">
+   <div class="card bg-light">
+    <a href="{{ post.url }}" class="bg-image square" style="background-image:url( '{{ post.featured_image }}' );"></a>
+    <div class="padded-t-1 padded-b-1">
+        
+        {% for item in post.categories %}
+            <a href="/blog-archive" class="tag"> {{item}} </a>
+        {% endfor %}
+
+        <h3 class="margin-t-1"> {{ post.title | truncate: 78}} </h3>
+        <p> {{ post.description | truncate: 100}} </p>
+        <a href="{{ post.url }}" class="subtle-button"> Read full article </a>
+
+    </div>
+   </div>
+</div>
+
+
